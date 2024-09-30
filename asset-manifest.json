@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eduardotakemura/trello-like-page.git/static/css/main.2ecda7b2.css",
+    "main.js": "/eduardotakemura/trello-like-page.git/static/js/main.23a96dd0.js",
+    "index.html": "/eduardotakemura/trello-like-page.git/index.html",
+    "main.2ecda7b2.css.map": "/eduardotakemura/trello-like-page.git/static/css/main.2ecda7b2.css.map",
+    "main.23a96dd0.js.map": "/eduardotakemura/trello-like-page.git/static/js/main.23a96dd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ecda7b2.css",
+    "static/js/main.23a96dd0.js"
+  ]
+}
