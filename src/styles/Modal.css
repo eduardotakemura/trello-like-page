@@ -1,0 +1,187 @@
+strong {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  display:block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent body scrolling */
+}
+
+.modal-content {
+  background: #fff;
+  width: 50%;
+  height: 90%;
+  padding: 20px 50px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.modal-body-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: calc(100% - 40px);
+  margin-bottom: 40px;
+}
+
+/* Title */
+.modal-title-input {
+  font-size: 1.5em;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Modal Body */
+.modal-body-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.modal-left {
+  width: 70%;
+  padding-right: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-close {
+  font-size: 40px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-body {
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+/* Tags */
+.modal-tags {
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ff9f43;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+/* Description */
+.modal-description {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.modal-description-text {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+/* Modal Config Column */
+.modal-right {
+  width: 30%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-settings-btn {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.modal-settings-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.modal-settings-btn:focus {
+  outline: none;
+  background-color: #d0d0d0;
+}
+
+/* Checklist */
+.completed {
+  text-decoration: line-through;
+}
+
+.checklist {
+  margin-top: 20px;
+}
+
+.checklist-header {
+  margin-bottom: 10px;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ff4500;
+}
+
+.add-item-btn {
+  transition: background-color 0.7s ease;
+}
+
+.add-item-btn:hover {
+  background-color: #aeafae;
+}

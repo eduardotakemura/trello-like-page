@@ -1,0 +1,75 @@
+/* Tags Modal Overlay */
+.tags-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Slightly higher z-index than the main modal */
+  }
+  
+  /* Tags Modal Content */
+  .tags-modal-content {
+    background: #fff;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Tags Modal Header */
+  .tags-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .tags-modal-header h3 {
+    margin: 0;
+  }
+  
+  .tags-modal-close {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  /* Tags Modal Body */
+  .tags-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #ff9f43;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .tag-blue {
+    background: #1e90ff;
+  }
+  
+  .tag:hover {
+    background: #ff7842;
+  }
+
+  .checkmark {
+    margin-left: 10px;
+    font-weight: bold;
+    color: white; /* Adjust color as needed */
+    display: inline-block; /* Keep it inline with the tag */
+  }
+  

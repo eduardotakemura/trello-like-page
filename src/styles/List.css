@@ -1,0 +1,152 @@
+.list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow-x: auto;
+  margin-top: 70px;
+  height: 100%;
+}
+
+.list-container > * {
+  flex-shrink: 0;
+}
+
+.list {
+  width: 300px;
+  background-color: #f8eaf8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.list_config-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.list_config-btn:hover {
+  color: #1f1c1c;
+}
+
+.list_body {
+  min-height: 100px;
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-height: calc(70vh - 70px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.list-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.list-body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.list_add-card-btn {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: start;
+  background-color: #f8eaf8;
+}
+
+.list_add-card-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.list_add-btn {
+  width: 300px;
+  background-color: #f8eaf8;
+  border: 1px solid #f8eaf8;
+  border-radius: 5px;
+  padding: 10px; 
+  cursor: pointer;
+  margin: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.list_add-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.list_title-input {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+.list_config-container {
+  position: relative;
+}
+
+.list_config-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.config_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.config_menu button {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 100%;
+}
+
+.config_menu button:hover {
+  background-color: #f4f4f4;
+}
+
